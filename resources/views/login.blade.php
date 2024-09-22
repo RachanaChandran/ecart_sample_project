@@ -31,6 +31,14 @@
             <input type="password" id="form1Example23" name="password" class="form-control form-control-lg" />
             <label class="form-label" for="form1Example23">Password</label>
           </div>
+          <div class="d-flex justify-content-around align-items-center mb-4">
+            <!-- Checkbox -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="1" name="remember_me" id="form1Example3"/>
+              <label class="form-check-label" for="form1Example3"> Remember me </label>
+            </div>
+            <a href="#!">Forgot password?</a>
+          </div>
           <button type="submit" class="btn btn-primary">Sign in</button>
         </form>
       </div>

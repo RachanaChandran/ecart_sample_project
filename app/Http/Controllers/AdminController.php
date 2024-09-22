@@ -20,7 +20,7 @@ class AdminController extends Controller
     }
     public function doLogin(){
         $inputs = ['username'=>request('username'),'password'=> request('password')];
-        if(Auth::guard('admin')->attempt($inputs))
+        if(Auth::guard('admin')->attempt($inputs,request('remember_me')))
         {
             return redirect()->route('dashboard');
         }
